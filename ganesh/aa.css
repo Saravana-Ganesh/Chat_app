@@ -1,0 +1,144 @@
+@media only screen and (max-width : 10000px) 
+            {
+                .chat-sidebar
+                {
+                    display: none !important;
+                }
+                
+                .chat-popup
+                {
+                    display: none !important;
+                }
+            }
+            
+            body
+            {
+                background-color:#a09fe0;
+            }
+            
+            .chat-sidebar
+            {
+                width: 200px;
+                position: fixed;
+                height: 100%;
+                right: 0px;
+                top: 0px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border: 1px solid rgba(29, 49, 91, .3);
+            }
+            
+            .sidebar-name 
+            {
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-bottom: 4px;
+                font-size: 12px;
+            }
+            
+            .sidebar-name span
+            {
+                padding-left: 5px;
+            }
+            
+            .sidebar-name a
+            {
+                display: block;
+                height: 100%;
+                text-decoration: none;
+                color: inherit;
+            }
+            
+            .sidebar-name:hover
+            {
+                background-color:#e1e2e5;
+            }
+            
+            .sidebar-name img
+            {
+                width: 32px;
+                height: 32px;
+                vertical-align:middle;
+            }
+            
+            .popup-box
+            {
+                display: none;
+                position: fixed;
+                bottom: 0px;
+                right: 220px;
+                height: 285px;
+                background-color: rgb(237, 239, 244);
+                width: 300px;
+                border: 1px solid rgba(29, 49, 91, .3);
+            }
+            
+            .popup-box .popup-head
+            {
+                background-color: #6d84b4;
+                padding: 5px;
+                color: white;
+                font-weight: bold;
+                font-size: 14px;
+                clear: both;
+            }
+            
+            .popup-box .popup-head .popup-head-left
+            {
+                float: left;
+            }
+            
+            .popup-box .popup-head .popup-head-right
+            {
+                float: right;
+                opacity: 0.5;
+            }
+            
+            .popup-box .popup-head .popup-head-right a
+            {
+                text-decoration: none;
+                color: inherit;
+            }
+            
+            .popup-box .popup-messages
+            {
+                height: 100%;
+                overflow-y: scroll;
+            }
+			.chatboxtop
+			{
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				float:left;
+       			overflow-y:scroll;
+				height: 370px;
+				width:100%;
+				color:red;
+				margin-top:-6px;
+			}
+			.chat_body
+			{
+				box-sizing: border-box;
+				font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+				font-size:14px;
+				line-height:1.42857143;
+				color:#333;
+				
+			}
+			.name
+			{
+				font-size:14px;
+				line-height: 36px;
+			}
+			.left_text
+			{
+				background: #ebebeb;
+				color: #333333;
+				border-radius: 8px 8px 8px 0;
+				padding: 12px;
+				font-size: 16px;
+				line-height: 26px;
+				position: relative;
+			}
+			
+			

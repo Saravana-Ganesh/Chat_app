@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+  <title>Gateway</title>
+  <link rel="stylesheet" href="like.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		
+</head>
+<body style="background-color:#f0f1f3">
+<div class="margin_top" id="margin_top" >	
+</div>
+<div class="container" id="status" style="background-color:white;margin-left:18%;width:50%">
+		<div class="form-group">
+		  <label for="comment"><b>Status</b></label>
+			<form action="status.php" method="POST">
+			  <textarea  class="form-control" rows="5" id="comment" name="status" placeholder="What's on your mind" required=""></textarea>
+			  <pre>
+			  <button type="submit" class="btn btn-primary"style="float:right;width:15%">Post</button>
+			  </pre>
+			</form>
+		</div>
+</div>
+<div class="container" id="status_message" style="margin-left:17%;width:52%">	
+</div>
+<script>
+				$(document).ready(function()
+				{
+					top_bar();
+					statu();
+				});
+					var top_bar=function top(){
+					$.ajax({
+						url: "fb.php",
+						Type:"Post",
+						success: function(result){
+							$('#margin_top').html(result);
+							console.log(11);
+						},error:function(result){
+							console.log(22);
+						}
+					});				
+				}
+				var statu=function status(){
+					$.ajax({
+						url: "statusmsg.php",
+						Type:"Post",
+						success: function(result){
+							$('#status_message').html(result);
+							console.log(111111);
+						},error:function(result){
+							console.log(2225);
+						}
+					});				
+				}
+</script>
+</script>
+</body>
+</html>

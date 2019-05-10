@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="po.css">
+		<meta content="noindex, nofollow" name="robots">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	</head>
+<body>
+
+<form action="register.php" method="POST" style="border:1px solid #ccc" >
+  <div class="container">
+	<h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+	<label for="username"><b>User Name</b></label>
+    <input type="text" placeholder="User Name" name="username" required>
+	
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" class="error" required>
+	<p style="color:red" id="p3" class="error"></p> 
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw1" required>
+	<p style="color:red"id="p20"></p>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw2" required>  
+	<p style="color:red" id="p19" class="error"></p>	
+	
+	<div class="margin">
+		<div class="clearfix">
+		  <button type="submit" id="submit" class="signupbtn" name="register_btn">Sign Up</button>
+		</div>
+		<div class="clearfix">
+		  <a href="signin.html"><button type="button" class="cancelbtn">SignIn</button></a>
+		</div>
+	</div>
+  </div>
+</form>
+	<script src="val.js"></script>
+</body>
+</html>

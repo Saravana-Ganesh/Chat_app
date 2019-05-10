@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: #b8c0ff;">
+
+<div class="container" >
+  <h2>Create your Own Group</h2>
+  <form action="groupcreation.php" method="POST">
+    <div class="form-group">
+        <label for="group_name">Enter your group name</label>
+        <input type="text" class="form-control" placeholder="Group Name" name="group_name" required=""/>
+    </div>
+   <button type="submit"  class="btn btn-success">Create Group</button>
+   <a href='aftlog.php'><input type='button' value="Go To Home" class="btn btn-warning">
+  </form>
+</div>
+
+</body>
+</html>

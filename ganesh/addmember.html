@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<?php
+$group_name=$_SESSION['var3'];
+echo"Inside The Group";
+echo $group_name;
+?>
+<div class="container">
+  <h2>Create your Own Group</h2>
+  <form action="addmember.php" method="POST">
+    <div class="form-group">
+        <label for="group_name">Enter Mail Id of Group Member To Be Added.....</label>
+        <input type="email" class="form-control" placeholder="Group Member Mail Id" name="group_name">
+    </div>
+   <button type="submit" class="btn btn-default">Add Member</button>
+  </form>
+</div>
+
+</body>
+</html>
