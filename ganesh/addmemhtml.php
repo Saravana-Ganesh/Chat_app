@@ -40,4 +40,6 @@ echo"<h1 style='text-align:center;color:red';>Welcome to group $group_nam</h1>";
 					}
 	</script>
 </body>
+
+
 </html>
